@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+
+    <a class="toDoLogOut" href="/logout">Logout</a>
+
+    <h1><%= user.userName %> has <%= left %> thing/s left to do.</h1>
+
+    <form action="/todos/createTodo" method='POST'>
+        <input class="textBox" type="text" placeholder="What should we do?" name='todoItem'>
+        <button class="submitButton" type="submit">Add</button>
+    </form>
+
+    <ul>
+    <% todos.forEach( el => { %>
+            <li class='todoItem' data-id='<%=el._id%>'>
+                <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.todo %></span>
+                <i class="fa-solid fa-trash del"></i>
+            </li>
+    <% }) %>    
+    </ul>
+
+
+
+    
+
+
+
+    
+</div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

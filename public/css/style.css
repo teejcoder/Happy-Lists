@@ -1,0 +1,167 @@
+html, body {
+    overflow: auto;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.todoItem{
+    font-size: 25px;
+    margin-top: 50px;
+    font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.del {
+    margin-left: 45px;
+}
+
+li .not {
+    list-style-type: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: lightcoral;
+    color: black;
+    font-size: large;
+}
+.toDoLogOut {   
+    display: flex;
+    align-self: start;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 100px;
+    border: 0;
+    border-radius: 4px;
+    background-color: lightsalmon;
+    color: black;
+    text-decoration: none;
+    font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-box-shadow: 1px 4px 14px 0px rgba(219,219,219,1);
+    -moz-box-shadow: 1px 4px 14px 0px rgba(219,219,219,1);
+    box-shadow: 1px 4px 14px 0px rgba(219,219,219,1);
+}
+
+h1{
+    color: black;
+    margin-bottom: 80px;
+    font-size: 40px;
+    font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.textBox{
+    height: 50px;
+    width: 250px;
+    margin-top: 20px;
+    border: 0;
+    border-bottom: 1px solid lightgray;
+    font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.submitButton:hover {
+    background-color: mediumaquamarine;
+    font-size: large;
+}
+.submitButton{
+    background-color: aquamarine;
+    border-radius: 7px;
+    border: 0;
+    height: 50px;
+    width: 250px;
+    margin-top: 20px;
+    font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-box-shadow: 1px 4px 14px 0px rgba(219,219,219,1);
+    -moz-box-shadow: 1px 4px 14px 0px rgba(219,219,219,1);
+    box-shadow: 1px 4px 14px 0px rgba(219,219,219,1);
+}
+
+.completed{
+    text-decoration: line-through;
+    color: gray;
+}
+
+
+
+/*********************************************************/
+/**************** HOME PAGE ***************/
+/*********************************************************/
+.mainPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+}
+
+span {
+    font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.mainPage > h1 {
+    margin-bottom: 300px;
+}
+
+.mainPage > a:hover {
+    background-color: mediumaquamarine;
+}
+
+.mainPage > a {
+    height: 50px;
+    width: 250px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    border-radius: 4px;
+    background-color: aquamarine;
+    color: black;
+    text-decoration: none;
+    font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: small;
+    -webkit-box-shadow: 1px 4px 14px 0px rgba(219,219,219,1);
+    -moz-box-shadow: 1px 4px 14px 0px rgba(219,219,219,1);
+    box-shadow: 1px 4px 14px 0px rgba(219,219,219,1);
+}
+
+
+/*********************************************************/
+/**************** SIGN UP ***************/
+/*********************************************************/
+.form{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+input {
+    height: 50px;
+    width: 250px;
+    margin-top: 20px;
+    border: 0;
+    border-bottom: 1px solid lightgray;
+    font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/*********************************************************/
+/**************** LOGIN ***************/
+/*********************************************************/
+.alerts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+    font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
