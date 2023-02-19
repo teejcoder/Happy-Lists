@@ -1,7 +1,10 @@
 # Introduction
 
-A Simple ToDo App is built using the MVC Architecture, we have also implemented "authorization" so users can sign up, customize & personalize the app 
+A Simple ToDo App is built using the MVC Architecture, we have also implemented "authorization" so users can sign up, customize & personalize the app
 
+For quick access to this app, click the button below
+
+[![forthebadge](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://gray-troubled-puffer.cyclic.app/)
 ---
 
 # Objectives
