@@ -16,29 +16,26 @@
 
     <a class="toDoLogOut" href="/logout">Logout</a>
 
+    <div class="raisedForm">
+
     <h1><%= user.userName %> has <%= left %> thing/s left to do.</h1>
 
-    <form action="/todos/createTodo" method='POST'>
-        <input class="textBox" type="text" placeholder="What should we do?" name='todoItem'>
-        <button class="submitButton" type="submit">Add</button>
-    </form>
-
-    <ul>
-    <% todos.forEach( el => { %>
-            <li class='todoItem' data-id='<%=el._id%>'>
-                <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.todo %></span>
-                <i class="fa-solid fa-trash del"></i>
-            </li>
-    <% }) %>    
-    </ul>
-
-
-
     
+        <form action="/todos/createTodo" method='POST'>
+            <input class="textBox" type="text" placeholder="What should we do?" name='todoItem'>
+            <button class="submitButton" type="submit">Add</button>
+        </form>
 
+        <ul>
+        <% todos.forEach( el => { %>
+                <li class='todoItem' data-id='<%=el._id%>'>
+                    <span class='<%= el.completed === true ? 'completed' : 'not'%>'><%= el.todo %></span>
+                    <i class="fa-solid fa-trash del"></i>
+                </li>
+        <% }) %>    
+        </ul>
+    </div>
 
-
-    
 </div>
 
     <script src="js/main.js"></script>

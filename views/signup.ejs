@@ -11,19 +11,27 @@
     <title>To Do List</title>
 </head>
 <body>
-<div class="signupError">
-    <% if (locals.messages.errors) { %>
-        <% messages.errors.forEach( el => { %>
-            <div class="alert alert-danger"><%= el.msg %></div>
-        <% }) %>    
-    <% } %>
+<div class="background">
+
+    <div class="raisedForm">
+        <div class="signupError alerts">
+            <% if (locals.messages.errors) { %>
+                <% messages.errors.forEach( el => { %>
+                    <div class="alert alert-danger"><%= el.msg %></div>
+                <% }) %>    
+            <% } %>
+        </div>
+    
+            <form class="form" action="/signup" method="POST">
+                <input type="text" class="signupUsername" name="userName" placeholder="User Name">
+                <input type="email" class="signupEmail" name="email" placeholder="Email">
+                <input type="password" class="signupPassword" name="password" placeholder="Password">
+                <input type="password" class="signupConfirmPassword" name="confirmPassword" placeholder="Confirm Password">
+                <button class="submitButton" type="submit">Sign Up</button>
+            </form>
+    </div>
+
 </div>
-        <form class="form" action="/signup" method="POST">
-            <input type="text" class="signupUsername" name="userName" placeholder="User Name">
-            <input type="email" class="signupEmail" name="email" placeholder="Email">
-            <input type="password" class="signupPassword" name="password" placeholder="Password">
-            <input type="password" class="signupConfirmPassword" name="confirmPassword" placeholder="Confirm Password">
-            <button class="submitButton" type="submit">Sign Up</button>
-        </form>
+
 </body>
 </html>
